@@ -1,0 +1,84 @@
+@import "fonts";
+
+.logo {
+    font-family: $fontlogo;
+    animation-name: fade;
+}
+
+
+.mk-choice {
+    background-image: linear-gradient(to right, #8B939A, #5B6467);
+}
+
+.mk-speach {
+    font-family: $choiceFont;
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+    z-index: 99;
+}
+
+.tot-cen {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    animation-name: fade;
+    animation-duration: 15s;
+}
+
+.link {
+    position:absolute;
+    top: 65%;
+    margin: auto;
+    font-family: $choiceFont;
+    font-size: 2rem;
+    animation-name: fade;
+    animation-duration: 25s;
+}
+
+.ord {
+    color: red;
+}
+
+.ord:hover {
+    color: black;
+}
+
+.gal {
+    color: blue;
+    left: 88%;
+}
+
+.gal:hover {
+    color: black;
+}
+
+.gallery {
+    margin-top: 1rem;
+    background-color: orange;
+    display:inline-block;
+}
+
+.item:hover {
+    transform: scale(2);
+}
+ .col {
+    margin: 2rem;
+    align-items: center;
+ }
+
+ .gallery-title {
+    font-family: $fontlogo;
+    font-size: 4rem;
+    letter-spacing: 1.25rem;
+    color: black;
+    text-align: center;
+    margin: 1.5rem;
+    margin-bottom: 5%;
+ }
+
+ .gallery-title:hover {
+    color: white;
+ }

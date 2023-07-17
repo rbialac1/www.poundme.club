@@ -1,0 +1,125 @@
+@import "variables";
+@import "fonts";
+
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.layer-1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    font-size: 7rem;
+    font-family: $fontlogo;
+    color: #0000ff;
+    animation-name: fade;
+    animation-duration: 30s;
+}
+
+.links {
+    color: white;
+    font-size: 4rem;
+    font-family: $fontlogo;
+    animation-name: fade;
+    animation-duration: 5s;
+    display: inline-block;
+    position: absolute;
+    left: 33%;
+}
+
+#links {
+    color: white;
+    font-size: 4rem;
+    font-family: $fontlogo;
+    animation-name: fade;
+    animation-duration: 5s;
+    display: inline-block;
+    position: absolute;
+    left: 33%;
+}
+.logo:hover {
+    color: #ff0000;
+}
+
+.blue {
+    color: blue;
+    padding: 15px;
+}
+
+.blue:hover {
+    color: black;
+}
+
+.red {
+    color: red;
+    padding: 15px;
+}
+
+.red:hover {
+    color: black;
+}
+
+.morph {
+    height: 90vh;
+    width: 100vw;
+}
+
+.countdown-clock {
+    background-color: orange;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 3rem;
+    padding:.5rem;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    font-family: $fontlogo;
+
+}
+
+body .data-science {
+    background-color: yellow;
+}
+
+form {
+    border: 10px double black;
+    min-width: fit-content;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 1rem;
+}
+
+.mk-choice {
+    background-image: linear-gradient(to right, #8B939A, #5B6467);
+}
+
+.gallery {
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid black;
+}
+
+.order-form {
+    font-size: 1rem;
+    font-family: $fontlogo;
+    margin: 20px;
+    color: green;
+    text-align: center;
+}
+
+.form-title {
+    font-family:$fontlogo;
+    margin: 20px;
+    text-align: center;
+}

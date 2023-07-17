@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemon&family=Nothing+You+Could+Do&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+.logo {
+  font-family: "Lemon", cursive;
+  animation-name: fade;
+}
+
+.mk-choice {
+  background-image: linear-gradient(to right, #8B939A, #5B6467);
+}
+
+.mk-speach {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  z-index: 99;
+}
+
+.tot-cen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  animation-name: fade;
+  animation-duration: 15s;
+}
+
+.link {
+  position: absolute;
+  top: 65%;
+  margin: auto;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  animation-name: fade;
+  animation-duration: 25s;
+}
+
+.ord {
+  color: red;
+}
+
+.ord:hover {
+  color: black;
+}
+
+.gal {
+  color: blue;
+  left: 88%;
+}
+
+.gal:hover {
+  color: black;
+}
+
+.gallery {
+  margin-top: 1rem;
+  background-color: orange;
+  display: inline-block;
+}
+
+.item:hover {
+  transform: scale(2);
+}
+
+.col {
+  margin: 2rem;
+  align-items: center;
+}
+
+.gallery-title {
+  font-family: "Lemon", cursive;
+  font-size: 4rem;
+  letter-spacing: 1.25rem;
+  color: black;
+  text-align: center;
+  margin: 1.5rem;
+  margin-bottom: 5%;
+}
+
+.gallery-title:hover {
+  color: white;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .logo {
+    font-size: 10rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .logo {
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  img {
+    width: 110%;
+    height: 110%;
+  }
+  .ord {
+    left: -8%;
+    font-size: 2rem;
+  }
+  .gal {
+    left: 98%;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .link {
+    display: inline-flex;
+    font-size: 1rem;
+    top: 85%;
+  }
+  .gal {
+    left: 106%;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 30s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+body {
+  padding-bottom: 5rem;
+}
+
+h1, h2, p {
+  padding: 0 5%;
+}/*# sourceMappingURL=style.css.map */

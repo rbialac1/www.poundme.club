@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>#Gallery</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <style>
+
+        .gallery-title {
+            font-family: "Lemon", cursive;
+            font-size: 4rem;
+            letter-spacing: 1.25rem;
+            color: black;
+            text-align: center;
+            margin-left: 50%;
+            margin: 1.5rem;
+            margin-bottom: 5%;
+        }
+
+        .gallery-title:hover {
+            color: white;
+        }
+        .gallery {
+            margin-top: 1rem;
+            background-color: orange;
+        }
+
+
+        @media only screen and (max-width: 480px) {                                         
+
+            .gallery-title {
+                letter-spacing: none;
+                font-size: 1rem;
+            }
+
+        }
+    </style>
+    <body class="gallery">
+        <h1 class="gallery-title">
+            Gallery
+        </h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width:300px">
+                        <img src="gallery_photos/gallery_photo/Intro_to_art.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">April Showers</h4>
+                            <p class="card-text" style="color:red"> FOR SALE: <p style="color:black">$50,000</p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width:250px">
+                        <img src="gallery_photos/gallery_photo/bottle_cap_bottle.jpg">
+                        <div class="card-body">
+                            <h4 class="card-title">One Bottle of B33R</h4>
+                            <p class="card-text" style="color:red"> FOR SALE: <p style="color:black">$30,000</p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>    
+</html>

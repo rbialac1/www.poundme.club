@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>A Path Taken</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <style>
+        .mk-choice {
+            background-image: linear-gradient(to right, #8B939A, #1a1b1b);
+        }
+
+        .mk-speach {
+            font-family: $choiceFont;
+            text-align: center;
+            color: white;
+            margin-top: 1rem;
+            z-index: 99;
+        }
+
+        .tot-cen {
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: auto;
+            animation-name: fade;
+            animation-duration: 15s;
+        }
+
+        .link {
+            position:absolute;
+            top: 65%;
+            margin: auto;
+            font-family: $choiceFont;
+            font-size: 2rem;
+            animation-name: fade;
+            animation-duration: 25s;
+        }
+
+        .ord {
+            color: red;
+        }
+
+        .ord:hover {
+            color: black;
+        }
+
+        .gal {
+            color: blue;
+            left: 88%;
+        }
+
+        .gal:hover {
+            color: black;
+        }
+
+        @media only screen and (max-width: 780px) {
+            .link{
+                display: inline-flex;
+                font-size: 1rem;
+                top: 85%;
+            }
+            .gal {
+                left: 106%;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .morph {
+                height: 75vh;
+                width: 75vw;
+            }
+
+            .link {
+                top: 85%;
+            }
+
+            .ord {
+                left: -8%;
+
+            }
+
+            .gal {
+                left: 92%;
+            }
+        }
+    </style>
+    <body class="mk-choice">
+        <h1 class="mk-speach">Welcome Center</h1>
+        <div class="tot-cen">
+            <a class="link ord" href="payable_order_form.html">Order</a>
+            <img class="morph" src="static/morph.png"/>
+            <a class="link gal" href="gallery.html">Bid</a>     
+        </div>
+                
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="playAudio.js"></script>
+    </body>
+</html>
